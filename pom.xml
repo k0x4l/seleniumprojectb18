@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -8,10 +9,12 @@
     <artifactId>seleniumprojectb18</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- Properties lines below is to force maven compiler to 1.8 -->
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
+
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -29,7 +32,8 @@
         </dependency>
 
 
-
     </dependencies>
+
+
 
 </project>
