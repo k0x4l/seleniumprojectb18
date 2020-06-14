@@ -1,17 +1,16 @@
 package test.day2_findElement_getText_getAttribute;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class P5_SmartBear_TitleVerification {
+class P5_SmartBear_TitleVerification {
 
     public static void main(String[] args) {
 
         //TC #5: Basic login authentication
         //1- Open a chrome browser
-        WebDriverManager.chromedriver().setup();
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\__{{ KoxaL }}__\\IdeaProjects\\seleniumprojectb18\\webdriver.chrome.driver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
