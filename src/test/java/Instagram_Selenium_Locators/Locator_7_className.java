@@ -19,8 +19,10 @@ public class Locator_7_className {
         String URL = "https://www.instagram.com/";
         driver.get(URL);
 
-        String Element = "_2hvTZ pexuQ zyHYP";
-        driver.findElement(By.className(Element)).sendKeys("cilekcicocuk"); //.sendKeys("wooden spoon");
+        String ElementX = "_2hvTZ pexuQ zyHYP";
+        driver.findElement(By.className(ElementX)).sendKeys("cilekcicocuk"); //.sendKeys("wooden spoon");
+
+        //driver.findElement(By.className("_2hvTZ pexuQ zyHYP")).sendKeys("cilekcicocuk");
 
 
     }

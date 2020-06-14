@@ -11,12 +11,12 @@ public class Locator_3_linkText {
         //WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        String URL = "https://www.instagram.com/accounts/login/";
+        //String URL = "https://www.instagram.com/accounts/login/"; //-
+        String URL = "https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome";
         driver.get(URL);
 
-        String LinkText = "Forgot password?";
-        //driver.findElement(By.linkText(LinkText));
-        //driver.findElement(By.linkText(LinkText)).click();
-        driver.findElement(By.linkText("Forgot password?")).click();
+        //driver.findElement(By.linkText("Forgot password?")).click(); //-
+        //driver.findElement(By.linkText("Sign Up")).click(); //+
+        driver.findElement(By.linkText("Sign Up")).click();
     }
 }
