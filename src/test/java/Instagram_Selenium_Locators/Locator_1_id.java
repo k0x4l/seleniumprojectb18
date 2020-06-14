@@ -17,14 +17,16 @@ public class Locator_1_id {
     syntax: driver.findElement(By.id("id attribute's value"))
          */
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\__{{ KoxaL }}__\\IdeaProjects\\seleniumprojectb18\\webdriver.chrome.driver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\__{{ KoxaL }}__\\IdeaProjects\\seleniumprojectb18\\chromedriver.exe");
         //WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         String URL = "https://www.etsy.com";
         driver.get(URL);
 
-        WebElement result = driver.findElement(By.id("global-enhancements-search-query")); //.sendKeys("wooden spoon");
+        String idWebElement = "global-enhancements-search-query";
+
+        WebElement result = driver.findElement(By.id(idWebElement)); //.sendKeys("wooden spoon");
         System.out.println(result.getAttribute("id"));
 
 
