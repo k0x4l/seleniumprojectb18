@@ -17,7 +17,7 @@ public class WebDriverFactory {
    public static WebDriver getDriver(String browserType){
 
        if(browserType.equalsIgnoreCase("chrome")){
-           System.setProperty("webdriver.chrome.driver", "C:\\Users\\__{{ KoxaL }}__\\IdeaProjects\\seleniumprojectb18\\webdriver.chrome.driver.exe");
+           System.setProperty("webdriver.chrome.driver","C:\\Users\\__{{ KoxaL }}__\\IdeaProjects\\seleniumprojectb18\\chromedriver.exe");
            return new ChromeDriver();
        }else if (browserType.equalsIgnoreCase("firefox")){
            WebDriverManager.firefoxdriver().setup();
